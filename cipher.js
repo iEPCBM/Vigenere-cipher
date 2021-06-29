@@ -52,11 +52,11 @@ function decrypt(text, key, alphabet) {
   text = text.toUpperCase();
   key = key.toUpperCase();
   maxLen = Math.max(text.length, key.length);
-  dencText = "";
+  decText = "";
   for (i=0; i<maxLen; i++) {
     lkid = alphabet.indexOf(key[i%key.length]);
     ltid = alphabet.indexOf(text[i%text.length]);
-    dencText+=alphabet[(alphabet.length+ltid-lkid)%alphabet.length];
+    decText+=alphabet[(alphabet.length+ltid-lkid)%alphabet.length];
   }
   return dencText;
 };
