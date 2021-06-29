@@ -1,0 +1,75 @@
+/*
+Copyright 2021 Rishat D. Kagirov (iEPCBM)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  padding: 25px 10px;
+}
+
+.form-wrapper {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator::after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-color: #bebebe;
+  position: absolute;
+}
+
+.page-title {
+  text-align: center;
+  margin: 7px 0;
+}
+
+.le-container > .fe-title {
+  display: inline-block;
+}
+
+.fe-title {
+  margin: 5px 2px;
+}
+
+.form-element {
+  padding: 10px 0;
+  position: relative;
+}
+
+.ta-felem {
+  width: 50%;
+  min-width: 20em;
+  height: 8em;
+}
+
+.result-warpper {
+  padding: 20px 0 0;
+}

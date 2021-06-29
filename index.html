@@ -1,0 +1,97 @@
+<!--
+Copyright 2021 Rishat D. Kagirov (iEPCBM)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vigenere cipher!</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="cipher.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="page-title">Vigenere cipher!</h1>
+    <div class="content-wrapper" id="encryptor">
+      <div class="form-wrapper">
+        <h2>Encryptor</h2>
+        <div class="form-element le-container">
+          <p class="fe-title">Select your language:</p>
+          <select id="sel-lang-encription" class="">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+            <option value="custom">Custom alphabet</option>
+          </select>
+        </div>
+        <div class="form-element le-container">
+          <p class="fe-title">Enter your alphabet:</p>
+          <input id="te-alphabet-encription" type="text" value="" disabled>
+        </div>
+        <div class="form-element">
+          <p class="fe-title">Enter your text:</p>
+          <textarea class="ta-felem" id="ta-text-encription"></textarea>
+        </div>
+        <div class="form-element le-container">
+          <p class="fe-title">Enter your secret key:</p>
+          <input id="te-key-encription" type="text" value="">
+        </div>
+        <div class="form-element">
+          <input id="btn-encry" type="button" value="Encrypt!">
+        </div>
+        <div class="result-warpper">
+          <p class="fe-title">Your encrypted text:</p>
+          <textarea class="ta-felem" id="ta-result-encription" disabled></textarea>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="form-wrapper" id="decryptor">
+        <h2>Decryptor</h2>
+        <div class="form-element le-container">
+          <p class="fe-title">Select your language:</p>
+          <select id="sel-lang-decription" class="">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+            <option value="custom">Custom alphabet</option>
+          </select>
+        </div>
+        <div class="form-element le-container">
+          <p class="fe-title">Enter your alphabet:</p>
+          <input id="te-alphabet-decription" type="text" value="" disabled>
+        </div>
+        <div class="form-element">
+          <p class="fe-title">Enter your encrypted text:</p>
+          <textarea class="ta-felem" id="ta-text-decription"></textarea>
+        </div>
+        <div class="form-element le-container">
+          <p class="fe-title">Enter your secret key:</p>
+          <input id="te-key-decription" type="text" value="">
+        </div>
+        <div class="form-element">
+          <input id="btn-decry" type="button" value="Decrypt!">
+        </div>
+        <div class="result-warpper">
+          <p class="fe-title">Your decrypted text:</p>
+          <textarea class="ta-felem" id="ta-result-decription" disabled></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
