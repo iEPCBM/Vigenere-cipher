@@ -21,21 +21,21 @@ SOFTWARE.
 */
 html, body {
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 .content-wrapper {
   display: flex;
-  padding: 25px 10px;
+  padding: 25px 10px
 }
 
 .form-wrapper {
   padding: 0 10px;
-  width: 100%;
+  width: 100%
 }
 
 .separator {
-  position: relative;
+  position: relative
 }
 
 .separator::after {
@@ -43,33 +43,33 @@ html, body {
   height: 100%;
   width: 1px;
   background-color: #bebebe;
-  position: absolute;
+  position: absolute
 }
 
 .page-title {
   text-align: center;
-  margin: 7px 0;
+  margin: 7px 0
 }
 
 .le-container > .fe-title {
-  display: inline-block;
+  display: inline-block
 }
 
 .fe-title {
-  margin: 5px 2px;
+  margin: 5px 2px
 }
 
 .form-element {
   padding: 10px 0;
-  position: relative;
+  position: relative
 }
 
 .ta-felem {
   width: 50%;
   min-width: 20em;
-  height: 8em;
+  height: 8em
 }
 
 .result-warpper {
-  padding: 20px 0 0;
+  padding: 20px 0 0
 }
