@@ -58,7 +58,7 @@ function decrypt(text, key, alphabet) {
     ltid = alphabet.indexOf(text[i%text.length]);
     decText+=alphabet[(alphabet.length+ltid-lkid)%alphabet.length];
   }
-  return dencText;
+  return decText;
 };
 
 $(document).ready(function() {
